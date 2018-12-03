@@ -30,6 +30,8 @@ public class SCLWithGet <E extends Comparable<? super E>>
         else {
             while (iter.hasNext()) {
                 E next = (E) iter.next();
+                //TODO
+                //fel
                 if (next.equals(e))
                     return next;
             }
