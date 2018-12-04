@@ -32,7 +32,7 @@ public class SCLWithGet <E extends Comparable<? super E>>
                 E next = (E) iter.next();
                 //TODO
                 //fel
-                if (next.equals(e))
+                if (next.compareTo(e) == 0)
                     return next;
             }
             add(e);
