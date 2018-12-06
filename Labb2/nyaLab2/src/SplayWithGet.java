@@ -131,51 +131,52 @@ public class SplayWithGet<E extends Comparable<? super E>>
             return e;
         } else {
             Entry t = find(e, root);
+            E compElem = t.element;     // t ändras efter sort så måste spara elementet för return.
             sort(t);
-            return t == null ? null : t.element;
+            return t == null ? null : compElem;
         }
     }
 
     public void sort(Entry t) {
-        E compEl = t.element;
-        while (root.element != compEl) {
+        E compElem = t.element;
+        while (root.element != compElem) {
            if (t.parent != root) {
                if (t.parent.parent.right != null) {
-                   if (t.equals(t.parent.parent.right.right)) {        // Till höger höger om grandparent
+                   if (t.equals(t.parent.parent.right.right)) {
                        zigzig(t);
                        t = t.parent;
-                   } else if (t.equals(t.parent.parent.right.left)) {    // Till höger vänster om grandparent
+                   } else if (t.equals(t.parent.parent.right.left)) {
                        zagzig(t.parent.parent);
                        t = t.parent;
                    }
-                   else if (t.equals(t.parent.parent.left.left)) {          // Till vänster vänster om grandparent
+                   else if (t.equals(t.parent.parent.left.left)) {
                        zagzag(t);
                        t = t.parent;
                    }
-                   else if (t.equals(t.parent.parent.left.right)) {    // Till vänster höger om grandparent
+                   else if (t.equals(t.parent.parent.left.right)) {
                        zigzag(t.parent.parent);
                        t = t.parent;
                    }
                } else if (t.parent.parent.left != null) {
-                   if (t.equals(t.parent.parent.left.left)) {          // Till vänster vänster om grandparent
+                   if (t.equals(t.parent.parent.left.left)) {
                        zagzag(t);
                        t = t.parent;
                    }
-                   else if (t.equals(t.parent.parent.left.right)) {    // Till vänster höger om grandparent
+                   else if (t.equals(t.parent.parent.left.right)) {
                        zigzag(t.parent.parent);
                        t = t.parent;
                    }
-                   else if (t.equals(t.parent.parent.right.right)) {        // Till höger höger om grandparent
+                   else if (t.equals(t.parent.parent.right.right)) {
                        zigzig(t);
                        t = t.parent.parent;
-                   } else if (t.equals(t.parent.parent.right.left)) {    // Till höger vänster om grandparent
+                   } else if (t.equals(t.parent.parent.right.left)) {
                        zagzig(t.parent.parent);
                        t = t.parent;
                    }
                }
-           } else if (t.equals(t.parent.left))                         // Till vänster om parent
+           } else if (t.equals(t.parent.left))
                zag(t.parent);
-           else if (t.equals(t.parent.right))                          // Till höger om parent
+           else if (t.equals(t.parent.right))
                zig(t.parent);
         }
     }
