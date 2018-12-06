@@ -25,6 +25,15 @@ public class SplayWithGet<E extends Comparable<? super E>>
         x.left = y;
     }
 
+    private void zig2(Entry x) {
+        Entry y = x.right;
+        y.parent = x.parent;
+        x.parent = y;
+        x.right = y.left;
+        y.left = x;
+
+    }
+
     /* Rotera 1 steg i hogervarv, dvs
                    x'                 y'
                   / \                / \
@@ -73,6 +82,11 @@ public class SplayWithGet<E extends Comparable<? super E>>
         z.parent = x;
     }
 
+    private void zigzag2(Entry x) {
+        zig(x.parent);
+        zag(x.parent);
+    }
+
     /* Rotera 2 steg i vanstervarv, dvs
                x'                  z'
               / \                /   \
@@ -100,11 +114,13 @@ public class SplayWithGet<E extends Comparable<? super E>>
     }
 
     private void zigzig(Entry x) {
-
+        zig(x.parent.parent);
+        zig(x.parent);
     }
 
     private void zagzag(Entry x) {
-
+        zag(x.parent.parent);
+        zag(x.parent);
     }
 
 
@@ -121,35 +137,46 @@ public class SplayWithGet<E extends Comparable<? super E>>
     }
 
     public void sort(Entry t) {
-        //TODO: @jol while-loopen slutar aldrig eftersom t byter värde så t.parent aldrig blir null
-        while (t.parent != null) {
-            if (t.parent != root) {
-                if (t.parent.parent.right != null) {
-                    if (t.equals(t.parent.parent.right.right))          // Till höger höger om grandparent
-                        zigzig(t);
-                    else if (t.equals(t.parent.parent.right.left))      // Till höger vänster om grandparent
-                        zagzig(t);
-                } else if (t.parent.parent.left != null) {
-                    if (t.equals(t.parent.parent.left.left))            // Till vänster vänster om grandparent
-                        zagzag(t);
-                    else if (t.equals(t.parent.parent.left.right))      // Till vänster höger om grandparent
-                        zigzag(t);
-                }
-            } else if (t.equals(t.parent.left))                         // Till vänster om parent
-                zag(t.parent);
-            else if (t.equals(t.parent.right))                          // Till höger om parent
-                zig(t.parent);
+        E compEl = t.element;
+        while (root.element != compEl) {
+           if (t.parent != root) {
+               if (t.parent.parent.right != null) {
+                   if (t.equals(t.parent.parent.right.right)) {        // Till höger höger om grandparent
+                       zigzig(t);
+                       t = t.parent;
+                   } else if (t.equals(t.parent.parent.right.left)) {    // Till höger vänster om grandparent
+                       zagzig(t.parent.parent);
+                       t = t.parent;
+                   }
+                   else if (t.equals(t.parent.parent.left.left)) {          // Till vänster vänster om grandparent
+                       zagzag(t);
+                       t = t.parent;
+                   }
+                   else if (t.equals(t.parent.parent.left.right)) {    // Till vänster höger om grandparent
+                       zigzag(t.parent.parent);
+                       t = t.parent;
+                   }
+               } else if (t.parent.parent.left != null) {
+                   if (t.equals(t.parent.parent.left.left)) {          // Till vänster vänster om grandparent
+                       zagzag(t);
+                       t = t.parent;
+                   }
+                   else if (t.equals(t.parent.parent.left.right)) {    // Till vänster höger om grandparent
+                       zigzag(t.parent.parent);
+                       t = t.parent;
+                   }
+                   else if (t.equals(t.parent.parent.right.right)) {        // Till höger höger om grandparent
+                       zigzig(t);
+                       t = t.parent.parent;
+                   } else if (t.equals(t.parent.parent.right.left)) {    // Till höger vänster om grandparent
+                       zagzig(t.parent.parent);
+                       t = t.parent;
+                   }
+               }
+           } else if (t.equals(t.parent.left))                         // Till vänster om parent
+               zag(t.parent);
+           else if (t.equals(t.parent.right))                          // Till höger om parent
+               zig(t.parent);
         }
-    }
-
-    public void sort2(Entry t) {
-        while (t.parent != null) {
-            if (t.element.equals(t.parent.left.element)) //om vänster om parent
-                zig(t);
-            else
-                zag(t);                 //om höger om parent
-
-        }
-
     }
 }
