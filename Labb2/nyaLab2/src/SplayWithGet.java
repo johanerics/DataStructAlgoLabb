@@ -12,17 +12,10 @@ public class SplayWithGet<E extends Comparable<? super E>>
      */
     private void zig(Entry x) {
         Entry y = x.right;
-        E temp = x.element;
-        x.element = y.element;
-        y.element = temp;
-        x.right = y.right;
-        if (x.right != null)
-            x.right.parent = x;
-        y.right = y.left;
-        y.left = x.left;
-        if (y.left != null)
-            y.left.parent = y;
-        x.left = y;
+        y.parent = x.parent;
+        x.parent = y;
+        x.right = y.left;
+        y.left =x ;
     }
 
     /* Rotera 1 steg i hogervarv, dvs
@@ -100,7 +93,7 @@ public class SplayWithGet<E extends Comparable<? super E>>
     }
 
     private void zigzig(Entry x) {
-
+        zig(x.parent);
     }
 
     private void zagzag(Entry x) {
@@ -122,7 +115,9 @@ public class SplayWithGet<E extends Comparable<? super E>>
 
     public void sort(Entry t) {
         //TODO: @jol while-loopen slutar aldrig eftersom t byter värde så t.parent aldrig blir null
-        while (t.parent != null) {
+
+        E compEl = t.element;
+        while (root.element!=compEl) {
             if (t.parent != root) {
                 if (t.parent.parent.right != null) {
                     if (t.equals(t.parent.parent.right.right))          // Till höger höger om grandparent
