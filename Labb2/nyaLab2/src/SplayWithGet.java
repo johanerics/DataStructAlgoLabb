@@ -123,7 +123,11 @@ public class SplayWithGet<E extends Comparable<? super E>>
         zag(x.parent);
     }
 
-
+    /**
+     * Given the element, if it's not added, adds it to the map or else it find it and sorts it.
+     * @param e The dummy element to compare to.
+     * @return The e
+     */
     @Override
     public E get(E e) {
         if (!this.contains(e)) {
@@ -137,6 +141,10 @@ public class SplayWithGet<E extends Comparable<? super E>>
         }
     }
 
+    /**
+     * Sorts the entry according to the splay rules
+     * @param t The entry to be sorted
+     */
     public void sort(Entry t) {
         E compElem = t.element;
         while (root.element != compElem) {
