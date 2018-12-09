@@ -1,4 +1,7 @@
 import java.util.Iterator;
+import java.util.Objects;
+
+import static java.util.Objects.*;
 
 public class SCLWithGet <E extends Comparable<? super E>>
         extends LinkedCollection<E>
@@ -9,15 +12,42 @@ public class SCLWithGet <E extends Comparable<? super E>>
 
     }
 
+
     @Override
     public boolean add(E element)
     {
+        Iterator iter = this.iterator();
         if ( element == null )
             throw new NullPointerException();
-        else {
+        else if(this.size() < 1)
+        {
             head = new Entry( element, head );
             return true;
         }
+        else {
+            Entry prevEntry=head;
+            Entry tempEntry = head;
+            E next = null;
+
+            while (iter.hasNext()) {
+                next = (E) iter.next();
+                prevEntry = tempEntry;
+                tempEntry=tempEntry.next;
+                if (next.compareTo(element) > 0)
+                {
+                    Entry newEntry = new Entry(element,tempEntry);
+                    prevEntry.next=newEntry;
+                    return true;
+                }
+
+            }
+            prevEntry.next=new Entry(element, null);
+            return true;
+
+        }
+
+
+
     }
 
     @Override
