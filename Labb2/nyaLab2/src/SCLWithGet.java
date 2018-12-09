@@ -23,6 +23,7 @@ public class SCLWithGet<E extends Comparable<? super E>>
 
         head = new Entry(element, head);
         add(head, head.next);
+        head = head.next;
         return true;
     }
 
@@ -35,7 +36,6 @@ public class SCLWithGet<E extends Comparable<? super E>>
         // Put head last.
         if (comp.next == null && head.element.compareTo(comp.element) >= 0) {
             comp.next = new Entry(head.element, null);
-            head = head.next;
             return;
         }
 
@@ -45,7 +45,6 @@ public class SCLWithGet<E extends Comparable<? super E>>
         } else {
             Entry tmp = new Entry(head.element, comp);
             prev.next = tmp;
-            head = head.next;
         }
     }
 
