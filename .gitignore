@@ -1,0 +1,9 @@
+# Ignore everything
+*
+# But descend into directories
+!*/
+!.gitignore
+# Recursively allow files under subtree
+!/Labb3/src/**
+# You can be specific with these rules
+!/Labb2/nyaLab2/src
