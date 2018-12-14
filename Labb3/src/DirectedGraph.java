@@ -13,6 +13,8 @@ public class DirectedGraph<E extends Edge> {
 		;
 	}
 
+	public double getWeight(){ return 0.0; }
+
 	public Iterator<E> shortestPath(int from, int to) {
 		return null;
 	}
