@@ -2,35 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdba7d21-ce68-4d7d-a529-1c8e4e10fccc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/johanericsson.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab1igen3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Labb1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Labb1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/.idea/dictionaries/johanericsson.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/.idea/dictionaries/johanericsson.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/Convexity Rule for Shape Decomposition.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/Convexity Rule for Shape Decomposition.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/DLList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/DLList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/DLList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/DLList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/DrawGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/DrawGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/DrawGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/DrawGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/KodTillLab1U2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/KodTillLab1U2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/.idea/dictionaries/johanericsson.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/.idea/dictionaries/johanericsson.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/Convexity Rule for Shape Decomposition.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/Convexity Rule for Shape Decomposition.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DLList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DLList$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DLList$DLListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DLList$DLListIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DLList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DLList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DLList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DLList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$CWEllipse2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$CWEllipse2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$CWLine2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$CWLine2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$GraphLayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$GraphLayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$Layer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$Layer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$SpecShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$SpecShape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/KodTillLab1U2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/KodTillLab1U2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig5.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nyaLab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nyaLab2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/AVL_Tree$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/AVL_Tree$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/AVL_Tree$AVL_Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/AVL_Tree$AVL_Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/AVL_Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/AVL_Tree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/AVLwithGet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/AVLwithGet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/BSTwithGet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/BSTwithGet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/BinarySearchTree$BSTPre_Iterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/BinarySearchTree$BSTPre_Iterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/BinarySearchTree$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/BinarySearchTree$Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/BinarySearchTree$QElem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/BinarySearchTree$QElem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/CollectionWithGet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/CollectionWithGet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/LinkedCollection$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/LinkedCollection$Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/LinkedCollection$LinkedCollectionIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/LinkedCollection$LinkedCollectionIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/LinkedCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/LinkedCollection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/LinkedStack$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/LinkedStack$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/LinkedStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/LinkedStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/SCLWithGet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/SCLWithGet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/SplayWithGet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/SplayWithGet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/Stacks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/Stacks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/TestFrame$RadioLyssnare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/TestFrame$RadioLyssnare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/TestFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/TestFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/TestMapWithCounter$TestMapEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/TestMapWithCounter$TestMapEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nyaLab2/TestMapWithCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nyaLab2/TestMapWithCounter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SCLWithGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SCLWithGet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,11 +56,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
+            <state relative-caret-position="229">
               <caret line="224" selection-start-line="224" selection-end-line="224" />
             </state>
           </provider>
@@ -54,7 +69,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SCLWithGet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="-39">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -64,71 +79,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/DefaultButtonModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="261" selection-start-line="261" selection-end-line="261" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/plaf/basic/BasicButtonListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="278" selection-start-line="278" selection-end-line="278" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
-              <folding>
-                <element signature="e#2410#2411#0" expanded="true" />
-                <element signature="e#2453#2454#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/EventQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="741" selection-start-line="741" selection-end-line="741" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/security/ProtectionDomain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/AbstractButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="1966" selection-start-line="1966" selection-end-line="1966" />
-              <folding>
-                <element signature="e#82980#82981#0" expanded="true" />
-                <element signature="e#83030#83031#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="1815">
               <caret line="127" selection-start-line="127" selection-end-line="127" />
               <folding>
                 <element signature="e#1511#1512#0" expanded="true" />
@@ -162,8 +115,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="43" />
+    <option name="x" value="39" />
+    <option name="y" value="25" />
     <option name="width" value="1388" />
     <option name="height" value="837" />
   </component>
@@ -173,8 +126,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544377379513" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544449905447" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -235,46 +188,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544367743682</updated>
-      <workItem from="1544367746499" duration="5460000" />
+      <workItem from="1544367746499" duration="7132000" />
+      <workItem from="1544455402726" duration="1377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5460000" />
+    <option name="totallyTimeSpent" value="8509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="43" width="1388" height="837" extended-state="0" />
-    <editor active="true" />
+    <frame x="39" y="25" width="1388" height="837" extended-state="0" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962853" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25334322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32885906" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,12 +244,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SCLWithGet.java</url>
-          <line>43</line>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="map" language="JAVA" />
+        <watch expression="this" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>this</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>map</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Iterator.java">
@@ -320,34 +293,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/AbstractButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="1966" selection-start-line="1966" selection-end-line="1966" />
-          <folding>
-            <element signature="e#82980#82981#0" expanded="true" />
-            <element signature="e#83030#83031#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/DefaultButtonModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="3285">
           <caret line="261" selection-start-line="261" selection-end-line="261" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/plaf/basic/BasicButtonListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="3645">
           <caret line="278" selection-start-line="278" selection-end-line="278" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="1170">
           <caret line="123" selection-start-line="123" selection-end-line="123" />
           <folding>
             <element signature="e#2410#2411#0" expanded="true" />
@@ -358,21 +320,32 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/EventQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="10200">
           <caret line="741" selection-start-line="741" selection-end-line="741" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/security/ProtectionDomain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="720">
           <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27855">
+          <caret line="1966" selection-start-line="1966" selection-end-line="1966" />
+          <folding>
+            <element signature="e#82980#82981#0" expanded="true" />
+            <element signature="e#83030#83031#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
+        <state relative-caret-position="1815">
           <caret line="127" selection-start-line="127" selection-end-line="127" />
           <folding>
             <element signature="e#1511#1512#0" expanded="true" />
@@ -392,14 +365,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
+        <state relative-caret-position="229">
           <caret line="224" selection-start-line="224" selection-end-line="224" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SCLWithGet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="-39">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />

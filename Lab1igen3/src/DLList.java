@@ -270,6 +270,8 @@ public class DLList {
     public void reduceListToKElements(int k){
         try {
             head = q.poll();
+            if (head==null)
+                throw new NullPointerException();
         }
         catch (NullPointerException e)
         {
@@ -281,14 +283,22 @@ public class DLList {
             Node removedNode;
             try {
                 removedNode = q.poll();
+                if (removedNode == null)
+                    throw new NullPointerException();
+
             }
             catch (NullPointerException e)
             {e.printStackTrace();
             return;
             }
 
+            if(removedNode.next!=null&&removedNode.prev!=null)
+            {
             removedNode.prev.next = removedNode.next;
             removedNode.next.prev = removedNode.prev;
+            }
+            else
+                throw new NullPointerException();
             // = Fixing sorting
             if(removedNode.prev.prev!=null)
             {

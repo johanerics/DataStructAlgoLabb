@@ -25,6 +25,11 @@ public class SCLWithGet <E extends Comparable<? super E>>
             return true;
         }
         else {
+            if(head.element.compareTo(element) > 0)
+            {
+                head = new Entry( element, head );
+                return true;
+            }
             Entry prevEntry=head;
             Entry tempEntry = head;
             E next = null;

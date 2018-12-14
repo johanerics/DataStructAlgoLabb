@@ -22,7 +22,8 @@ public class Main {
 			l = DrawGraph.Layer.OVERLAY;
 		}
 		shape.clearLayer(l);
-		Point p1 = (Point) it.next(); // assuming at least two points
+		Point p1 = (Point) it.next(); //
+        // assuming at least two points
 		while (it.hasNext()) {
 			Point p2 = (Point) it.next();
 			shape.drawLine((int)p1.getX(), (int)p1.getY(), 
