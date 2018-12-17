@@ -2,51 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdba7d21-ce68-4d7d-a529-1c8e4e10fccc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Lab1igen3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labb1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labb1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/.idea/dictionaries/johanericsson.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/.idea/dictionaries/johanericsson.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/Convexity Rule for Shape Decomposition.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/Convexity Rule for Shape Decomposition.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/DLList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/DLList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/DLList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/DLList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/DrawGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/DrawGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/DrawGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/DrawGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/KodTillLab1U2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/KodTillLab1U2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/fig5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/fig5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/.idea/dictionaries/johanericsson.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/.idea/dictionaries/johanericsson.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/Convexity Rule for Shape Decomposition.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/Convexity Rule for Shape Decomposition.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DLList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DLList$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DLList$DLListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DLList$DLListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DLList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DLList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DLList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DLList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$CWEllipse2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$CWEllipse2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$CWLine2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$CWLine2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$GraphLayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$GraphLayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$Layer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$Layer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph$SpecShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph$SpecShape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/DrawGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/DrawGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/KodTillLab1U2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/KodTillLab1U2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labb1/KodTillLab1U2/out/production/KodTillLab1U2/fig5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1igen3/src/out/production/KodTillLab1U2/fig5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SCLWithGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SCLWithGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb3/src/CompKruskalEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb3/src/CompKruskalEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb3/src/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb3/src/DirectedGraph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,20 +17,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="3195">
               <caret line="224" selection-start-line="224" selection-end-line="224" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SCLWithGet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
+            <state relative-caret-position="15">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SplayWithGet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1884">
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -83,12 +49,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1815">
               <caret line="127" selection-start-line="127" selection-end-line="127" />
-              <folding>
-                <element signature="e#1511#1512#0" expanded="true" />
-                <element signature="e#1555#1556#0" expanded="true" />
-                <element signature="e#3077#3078#0" expanded="true" />
-                <element signature="e#3105#3106#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -96,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestMapWithCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
+            <state relative-caret-position="1515">
               <caret line="111" selection-start-line="111" selection-end-line="111" />
             </state>
           </provider>
@@ -115,8 +75,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
-    <option name="y" value="25" />
+    <option name="x" value="52" />
+    <option name="y" value="96" />
     <option name="width" value="1388" />
     <option name="height" value="837" />
   </component>
@@ -127,7 +87,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,12 +103,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544449905447" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545049190247" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -190,16 +150,18 @@
       <updated>1544367743682</updated>
       <workItem from="1544367746499" duration="7132000" />
       <workItem from="1544455402726" duration="1377000" />
+      <workItem from="1545049133371" duration="215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8509000" />
+    <option name="totallyTimeSpent" value="8724000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="25" width="1388" height="837" extended-state="0" />
+    <frame x="52" y="96" width="1388" height="837" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25334322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25705793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -343,6 +305,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3195">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1815">
@@ -358,25 +327,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestMapWithCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
+        <state relative-caret-position="1515">
           <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="224" selection-start-line="224" selection-end-line="224" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SCLWithGet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
+        <state relative-caret-position="15">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SplayWithGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1884">
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -1,2 +1,13 @@
-public class CompKruskalEdge {
+public class CompKruskalEdge <E extends NodeObject> {
+
+    E[] nodeList;
+
+
+    public CompKruskalEdge()
+    {
+
+
+    }
+
+
 }
