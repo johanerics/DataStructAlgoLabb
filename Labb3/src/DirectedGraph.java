@@ -1,31 +1,28 @@
-
 import java.util.*;
 
 public class DirectedGraph<E extends Edge> {
 
+	private LinkedList<E> edges;
+	private int noOfNodes;
 
 	public DirectedGraph(int noOfNodes) {
-
+		this.edges = new LinkedList<E>();
+		this.noOfNodes = noOfNodes;
 	}
 
 	public void addEdge(E e) {
-		;
+		edges.add(e);
 	}
 
-	//Djikstra
 	public Iterator<E> shortestPath(int from, int to) {
-		//returnerar en iterator för tex linkedlist
-		//E = busEdge
-
-
-		return null;
+		CompDijkstraPath cdp = new CompDijkstraPath(from,to, edges);
+		return cdp.getDijkstra();
 	}
 
-	//Kruskal
 	public Iterator<E> minimumSpanningTree() {
-
+		//CompKruskalEdge kruskal = new CompKruskalEdge(edges, noOfNodes);
+		//return kruskal.getMST();
 		return null;
 	}
 
 }
-  
