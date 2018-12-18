@@ -1,7 +1,4 @@
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class CompDijkstraPath<E extends BusEdge> {
 
@@ -9,22 +6,21 @@ public class CompDijkstraPath<E extends BusEdge> {
     int toNode;
     LinkedList<E> busEdges;
 
-    PriorityQueue<dijsktraNode> PQ = null;
 
     public CompDijkstraPath(int from, int to, LinkedList<E> busEdges) {
         fromNode = from;
         toNode = to;
         this.busEdges = busEdges;
-        PQ=new PriorityQueue<>();
+
     }
 
     public class dijsktraNode implements Comparable {
         public int nodeObject;
-        public int from;
         public double cost;
-        public Edge edge;
-        public boolean visited = false;
+
+
         public LinkedList<BusEdge> path;
+
         public LinkedList<dijsktraNode> connectedEdges;
 
         public dijsktraNode(int n, double cost, LinkedList<BusEdge> path) {
@@ -32,6 +28,7 @@ public class CompDijkstraPath<E extends BusEdge> {
             this.cost = cost;
             this.path = path;
             connectedEdges = new LinkedList<>();
+            
         }
 
 
@@ -64,20 +61,23 @@ public class CompDijkstraPath<E extends BusEdge> {
         //this.fromNode = fromNode;
         //this.toNode = toNode;
         //this.busEdges = edges;
+        PriorityQueue<dijsktraNode> PQ = new PriorityQueue<>();
+
+        ArrayList<Integer> visited = new ArrayList<>();
 
         //Addar startnod
         PQ.add(new dijsktraNode(fromNode, 0, new LinkedList<BusEdge>()));
         dijsktraNode DN=null;
         while (!PQ.isEmpty()) {
             DN = PQ.poll();
-            DN.checkConnectedNodes();
-            if (!DN.visited) {
+           // DN.checkConnectedNodes();
+            if (!visited.contains(DN.nodeObject)) {
                 if (DN.nodeObject == toNode)
                     return DN.path.iterator();
                 else {
-                    DN.visited = true;
+                    visited.add(DN.nodeObject);
                     for (dijsktraNode d : DN.connectedEdges) {
-                        if (!d.visited) {
+                        if (!visited.contains(d)) {
                             PQ.add(d);
                         }
                     }

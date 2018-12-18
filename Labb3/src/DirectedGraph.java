@@ -4,6 +4,7 @@ public class DirectedGraph<E extends Edge> {
 
 	private LinkedList<E> edges;
 	private int noOfNodes;
+	public List<E>[] neighbours;
 
 	public DirectedGraph(int noOfNodes) {
 		this.edges = new LinkedList<E>();
@@ -12,6 +13,7 @@ public class DirectedGraph<E extends Edge> {
 
 	public void addEdge(E e) {
 		edges.add(e);
+		neighbours[e.from].add(e);
 	}
 
 	public Iterator<E> shortestPath(int from, int to) {
