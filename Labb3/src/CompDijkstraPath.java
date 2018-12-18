@@ -15,6 +15,7 @@ public class CompDijkstraPath<E extends BusEdge> {
         fromNode = from;
         toNode = to;
         this.busEdges = busEdges;
+        PQ=new PriorityQueue<>();
     }
 
     public class dijsktraNode implements Comparable {
@@ -24,24 +25,25 @@ public class CompDijkstraPath<E extends BusEdge> {
         public Edge edge;
         public boolean visited = false;
         public LinkedList<BusEdge> path;
-        public List<dijsktraNode> connectedEdges;
+        public LinkedList<dijsktraNode> connectedEdges;
 
         public dijsktraNode(int n, double cost, LinkedList<BusEdge> path) {
             this.nodeObject = n;
             this.cost = cost;
             this.path = path;
+            connectedEdges = new LinkedList<>();
+        }
 
-            try{
+
+        public void checkConnectedNodes()
+        {
             for (E e : busEdges) {
-                if (e.from == n) {
+                if (e.from == nodeObject) {
                     LinkedList<BusEdge> tempPath = this.path;
                     tempPath.add(e);
-                    connectedEdges.add(new dijsktraNode(e.to, this.cost + e.getWeight(), tempPath));
+                    this.connectedEdges.add(new dijsktraNode(e.to, this.cost + e.getWeight(), tempPath));
                 }
             }
-            }
-            catch (NullPointerException e){e.printStackTrace();}
-
         }
 
         @Override
@@ -50,7 +52,7 @@ public class CompDijkstraPath<E extends BusEdge> {
 
             if (dNtemp.cost < this.cost)
                 return 1;
-            else if (dNtemp.cost < this.cost)
+            else if (dNtemp.cost == this.cost)
                 return 0;
             else
                 return -1;
@@ -65,10 +67,10 @@ public class CompDijkstraPath<E extends BusEdge> {
 
         //Addar startnod
         PQ.add(new dijsktraNode(fromNode, 0, new LinkedList<BusEdge>()));
-
-        dijsktraNode DN;
+        dijsktraNode DN=null;
         while (!PQ.isEmpty()) {
-            DN = PQ.peek();
+            DN = PQ.poll();
+            DN.checkConnectedNodes();
             if (!DN.visited) {
                 if (DN.nodeObject == toNode)
                     return DN.path.iterator();
