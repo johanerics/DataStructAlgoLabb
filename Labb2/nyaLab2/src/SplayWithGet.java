@@ -15,16 +15,7 @@ public class SplayWithGet<E extends Comparable<? super E>>
         y.parent = x.parent;
         x.parent = y;
         x.right = y.left;
-        y.left =x ;
-    }
-
-    private void zig2(Entry x) {
-        Entry y = x.right;
-        y.parent = x.parent;
-        x.parent = y;
-        x.right = y.left;
         y.left = x;
-
     }
 
     /* Rotera 1 steg i hogervarv, dvs
@@ -75,11 +66,6 @@ public class SplayWithGet<E extends Comparable<? super E>>
         z.parent = x;
     }
 
-    private void zigzag2(Entry x) {
-        zig(x.parent);
-        zag(x.parent);
-    }
-
     /* Rotera 2 steg i vanstervarv, dvs
                x'                  z'
               / \                /   \
@@ -107,17 +93,53 @@ public class SplayWithGet<E extends Comparable<? super E>>
     }
 
     private void zigzig(Entry x) {
-        zig(x.parent.parent);
-        zig(x.parent);
+        Entry z = x.parent;
+        Entry y = z.right;
+        y.parent = z.parent;
+        z.parent = y;
+        z.right = y.left;
+        y.left = z;
+        y = x;
+        y.parent = x.parent;
+        x.parent = y;
+        x.right = y.left;
+        y.left = x;
     }
 
     private void zagzag(Entry x) {
-        zag(x.parent.parent);
-        zag(x.parent);
+
+        Entry z= x.parent;
+        Entry y = z.left;
+        //Round 1
+        E temp = z.element;
+        z.element = y.element;
+        y.element = temp;
+        z.left = y.left;
+        if (z.left != null)
+            z.left.parent = z;
+        y.left = y.right;
+        y.right = z.right;
+        if (y.right != null)
+            y.right.parent = y;
+        //Round 2
+        z.right = y;
+        y = x.left;
+        temp = x.element;
+        x.element = y.element;
+        y.element = temp;
+        x.left = y.left;
+        if (x.left != null)
+            x.left.parent = x;
+        y.left = y.right;
+        y.right = x.right;
+        if (y.right != null)
+            y.right.parent = y;
+        x.right = y;
     }
 
     /**
      * Given the element, if it's not added, adds it to the map or else it find it and sorts it.
+     *
      * @param e The dummy element to compare to.
      * @return The e
      */
@@ -136,49 +158,46 @@ public class SplayWithGet<E extends Comparable<? super E>>
 
     /**
      * Sorts the entry according to the splay rules
+     *
      * @param t The entry to be sorted
      */
     public void sort(Entry t) {
         E compElem = t.element;
         while (root.element != compElem) {
-           if (t.parent != root) {
-               if (t.parent.parent.right != null) {
-                   if (t.equals(t.parent.parent.right.right)) {
-                       zigzig(t);
-                       t = t.parent;
-                   } else if (t.equals(t.parent.parent.right.left)) {
-                       zagzig(t.parent.parent);
-                       t = t.parent;
-                   }
-                   else if (t.equals(t.parent.parent.left.left)) {
-                       zagzag(t);
-                       t = t.parent;
-                   }
-                   else if (t.equals(t.parent.parent.left.right)) {
-                       zigzag(t.parent.parent);
-                       t = t.parent;
-                   }
-               } else if (t.parent.parent.left != null) {
-                   if (t.equals(t.parent.parent.left.left)) {
-                       zagzag(t);
-                       t = t.parent;
-                   }
-                   else if (t.equals(t.parent.parent.left.right)) {
-                       zigzag(t.parent.parent);
-                       t = t.parent;
-                   }
-                   else if (t.equals(t.parent.parent.right.right)) {
-                       zigzig(t);
-                       t = t.parent.parent;
-                   } else if (t.equals(t.parent.parent.right.left)) {
-                       zagzig(t.parent.parent);
-                       t = t.parent;
-                   }
-               }
-           } else if (t.equals(t.parent.left))
-               zag(t.parent);
-           else if (t.equals(t.parent.right))
-               zig(t.parent);
+            if (t.parent != root) {
+                if (t.parent.parent.right != null) {
+                    if (t.equals(t.parent.parent.right.right)) {
+                        zigzig(t);
+                        t = t.parent;
+                    } else if (t.equals(t.parent.parent.right.left)) {
+                        zagzig(t.parent.parent);
+                        t = t.parent;
+                    } else if (t.equals(t.parent.parent.left.left)) {
+                        zagzag(t);
+                        t = t.parent;
+                    } else if (t.equals(t.parent.parent.left.right)) {
+                        zigzag(t.parent.parent);
+                        t = t.parent;
+                    }
+                } else if (t.parent.parent.left != null) {
+                    if (t.equals(t.parent.parent.left.left)) {
+                        zagzag(t);
+                        t = t.parent;
+                    } else if (t.equals(t.parent.parent.left.right)) {
+                        zigzag(t.parent.parent);
+                        t = t.parent;
+                    } else if (t.equals(t.parent.parent.right.right)) {
+                        zigzig(t);
+                        t = t.parent.parent;
+                    } else if (t.equals(t.parent.parent.right.left)) {
+                        zagzig(t.parent.parent);
+                        t = t.parent;
+                    }
+                }
+            } else if (t.equals(t.parent.left))
+                zag(t.parent);
+            else if (t.equals(t.parent.right))
+                zig(t.parent);
         }
     }
 }
