@@ -5,12 +5,13 @@ public class CompDijkstraPath<E extends BusEdge> {
     int fromNode=0;
     int toNode;
     LinkedList<E> busEdges;
+    List<E>[] neighbours;
 
-
-    public CompDijkstraPath(int from, int to, LinkedList<E> busEdges) {
+    public CompDijkstraPath(int from, int to, LinkedList<E> busEdges, List<E>[] neighbours) {
         fromNode = from;
         toNode = to;
         this.busEdges = busEdges;
+        this.neighbours=neighbours;
 
     }
 
@@ -28,7 +29,13 @@ public class CompDijkstraPath<E extends BusEdge> {
             this.cost = cost;
             this.path = path;
             connectedEdges = new LinkedList<>();
-            
+            List<E> neighb = neighbours[n];
+            for (BusEdge e:neighb) {
+                LinkedList<BusEdge> tempPath = this.path;
+                tempPath.add(e);
+                connectedEdges.add(new dijsktraNode(e.from,e.getWeight()+cost,tempPath));
+            }
+
         }
 
 
@@ -70,14 +77,14 @@ public class CompDijkstraPath<E extends BusEdge> {
         dijsktraNode DN=null;
         while (!PQ.isEmpty()) {
             DN = PQ.poll();
-           // DN.checkConnectedNodes();
+            DN.checkConnectedNodes();
             if (!visited.contains(DN.nodeObject)) {
                 if (DN.nodeObject == toNode)
                     return DN.path.iterator();
                 else {
                     visited.add(DN.nodeObject);
                     for (dijsktraNode d : DN.connectedEdges) {
-                        if (!visited.contains(d)) {
+                        if (!visited.contains(d.nodeObject)) {
                             PQ.add(d);
                         }
                     }
