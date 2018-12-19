@@ -27,9 +27,9 @@ public class DirectedGraph<E extends Edge> {
 	}
 
 	public Iterator<E> minimumSpanningTree() {
-		//CompKruskalEdge kruskal = new CompKruskalEdge(edges, noOfNodes);
-		//return kruskal.getMST();
-		return null;
+		CompKruskalEdge kruskal = new CompKruskalEdge(edges, noOfNodes);
+		return kruskal.getMST();
+		
 	}
 
 }
