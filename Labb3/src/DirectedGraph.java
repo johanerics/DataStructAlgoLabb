@@ -30,10 +30,9 @@ public class DirectedGraph<E extends Edge> {
 		while (!PQ.isEmpty())
 		{
 			CompDijkstraPath node = PQ.poll();
-			if (!visited.contains(node))
+			if (!visited.contains(node.nodeObject))
 			{
 				if(node.nodeObject==to){
-					visited.clear();
 					return node.path.iterator();
 				}
 				else {
