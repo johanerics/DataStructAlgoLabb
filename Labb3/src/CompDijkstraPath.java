@@ -1,58 +1,22 @@
 import java.util.*;
 
-public class CompDijkstraPath<E extends BusEdge> {
+public class CompDijkstraPath<E extends BusEdge> implements Comparable {
 
-    int fromNode=0;
-    int toNode;
-    LinkedList<E> busEdges;
-    List<E>[] neighbours;
+    int nodeObject=0;
+    double cost=0;
+    LinkedList<E> path;
 
-    public CompDijkstraPath(int from, int to, LinkedList<E> busEdges, List<E>[] neighbours) {
-        fromNode = from;
-        toNode = to;
-        this.busEdges = busEdges;
-        this.neighbours=neighbours;
+
+    public CompDijkstraPath(int n, double cost, LinkedList<E> path) {
+        this.nodeObject = n;
+        this.cost = cost;
+        this.path = path;
 
     }
 
-    public class dijsktraNode implements Comparable {
-        public int nodeObject;
-        public double cost;
-
-
-        public LinkedList<BusEdge> path;
-
-        public LinkedList<dijsktraNode> connectedEdges;
-
-        public dijsktraNode(int n, double cost, LinkedList<BusEdge> path) {
-            this.nodeObject = n;
-            this.cost = cost;
-            this.path = path;
-            connectedEdges = new LinkedList<>();
-            List<E> neighb = neighbours[n];
-            for (BusEdge e:neighb) {
-                LinkedList<BusEdge> tempPath = this.path;
-                tempPath.add(e);
-                connectedEdges.add(new dijsktraNode(e.from,e.getWeight()+cost,tempPath));
-            }
-
-        }
-
-
-        public void checkConnectedNodes()
-        {
-            for (E e : busEdges) {
-                if (e.from == nodeObject) {
-                    LinkedList<BusEdge> tempPath = this.path;
-                    tempPath.add(e);
-                    this.connectedEdges.add(new dijsktraNode(e.to, this.cost + e.getWeight(), tempPath));
-                }
-            }
-        }
-
         @Override
         public int compareTo(Object o) {
-            dijsktraNode dNtemp = (dijsktraNode) o;
+            CompDijkstraPath dNtemp = (CompDijkstraPath) o;
 
             if (dNtemp.cost < this.cost)
                 return 1;
@@ -61,38 +25,10 @@ public class CompDijkstraPath<E extends BusEdge> {
             else
                 return -1;
 
-        }
+
     }
 
-    public Iterator<BusEdge> getDijkstra(){//LinkedList<E> edges, int fromNode, int toNode) {
-        //this.fromNode = fromNode;
-        //this.toNode = toNode;
-        //this.busEdges = edges;
-        PriorityQueue<dijsktraNode> PQ = new PriorityQueue<>();
 
-        ArrayList<Integer> visited = new ArrayList<>();
-
-        //Addar startnod
-        PQ.add(new dijsktraNode(fromNode, 0, new LinkedList<BusEdge>()));
-        dijsktraNode DN=null;
-        while (!PQ.isEmpty()) {
-            DN = PQ.poll();
-            DN.checkConnectedNodes();
-            if (!visited.contains(DN.nodeObject)) {
-                if (DN.nodeObject == toNode)
-                    return DN.path.iterator();
-                else {
-                    visited.add(DN.nodeObject);
-                    for (dijsktraNode d : DN.connectedEdges) {
-                        if (!visited.contains(d.nodeObject)) {
-                            PQ.add(d);
-                        }
-                    }
-                }
-            }
-        }
-        return null;
-    }
 
 
 }
