@@ -1,30 +1,20 @@
-public class SplayWithGet<E extends Comparable<? super E>>
-        extends BinarySearchTree<E>
-        implements CollectionWithGet<E> {
+public class SplayWithGet<E extends Comparable<? super E>> extends BinarySearchTree<E> implements CollectionWithGet<E> {
 
-
-    /* Rotera 1 steg i vanstervarv, dvs
-               x'                 y'
-              / \                / \
-             A   y'  -->        x'  C
-                / \            / \
-               B   C          A   B
-     */
     private void zig(Entry x) {
         Entry y = x.right;
-        y.parent = x.parent;
-        x.parent = y;
-        x.right = y.left;
-        y.left = x;
+        E temp = x.element;
+        x.element = y.element;
+        y.element = temp;
+        x.right = y.right;
+        if (x.right != null)
+            x.right.parent = x;
+        y.right = y.left;
+        y.left = x.left;
+        if (y.left != null)
+            y.left.parent = y;
+        x.left = y;
     }
 
-    /* Rotera 1 steg i hogervarv, dvs
-                   x'                 y'
-                  / \                / \
-                 y'  C   -->        A   x'
-                / \                    / \
-               A   B                  B   C
-    */
     private void zag(Entry x) {
         Entry y = x.left;
         E temp = x.element;
@@ -40,15 +30,6 @@ public class SplayWithGet<E extends Comparable<? super E>>
         x.right = y;
     }
 
-    /* Rotera 2 steg i hogervarv, dvs
-               x'                  z'
-              / \                /   \
-             y'  D   -->        y'    x'
-            / \                / \   / \
-           A   z'             A   B C   D
-              / \
-             B   C
-     */
     private void zigzag(Entry x) {
         Entry y = x.left,
                 z = x.left.right;
@@ -66,15 +47,6 @@ public class SplayWithGet<E extends Comparable<? super E>>
         z.parent = x;
     }
 
-    /* Rotera 2 steg i vanstervarv, dvs
-               x'                  z'
-              / \                /   \
-             A   y'   -->       x'    y'
-                / \            / \   / \
-               z   D          A   B C   D
-              / \
-             B   C
-     */
     private void zagzig(Entry x) {
         Entry y = x.right,
                 z = x.right.left;
@@ -91,7 +63,6 @@ public class SplayWithGet<E extends Comparable<? super E>>
         x.left = z;
         z.parent = x;
     }
-
     private void zigzig(Entry x) {
         Entry z = x.parent;
         Entry y = z.right;
@@ -139,7 +110,6 @@ public class SplayWithGet<E extends Comparable<? super E>>
 
     /**
      * Given the element, if it's not added, adds it to the map or else it find it and sorts it.
-     *
      * @param e The dummy element to compare to.
      * @return The e
      */
@@ -150,15 +120,15 @@ public class SplayWithGet<E extends Comparable<? super E>>
             return e;
         } else {
             Entry t = find(e, root);
-            E compElem = t.element;     // t ändras efter sort så måste spara elementet för return.
-            sort(t);
-            return t == null ? null : compElem;
+//            // t ändras efter sort så måste spara elementet för return.
+//            E compElem = t.element;
+//            sort(t);
+            return t == null ? null : t.element;
         }
     }
 
     /**
      * Sorts the entry according to the splay rules
-     *
      * @param t The entry to be sorted
      */
     public void sort(Entry t) {
@@ -172,10 +142,12 @@ public class SplayWithGet<E extends Comparable<? super E>>
                     } else if (t.equals(t.parent.parent.right.left)) {
                         zagzig(t.parent.parent);
                         t = t.parent;
-                    } else if (t.equals(t.parent.parent.left.left)) {
+                    }
+                    else if (t.equals(t.parent.parent.left.left)) {
                         zagzag(t);
                         t = t.parent;
-                    } else if (t.equals(t.parent.parent.left.right)) {
+                    }
+                    else if (t.equals(t.parent.parent.left.right)) {
                         zigzag(t.parent.parent);
                         t = t.parent;
                     }
@@ -183,10 +155,12 @@ public class SplayWithGet<E extends Comparable<? super E>>
                     if (t.equals(t.parent.parent.left.left)) {
                         zagzag(t);
                         t = t.parent;
-                    } else if (t.equals(t.parent.parent.left.right)) {
+                    }
+                    else if (t.equals(t.parent.parent.left.right)) {
                         zigzag(t.parent.parent);
                         t = t.parent;
-                    } else if (t.equals(t.parent.parent.right.right)) {
+                    }
+                    else if (t.equals(t.parent.parent.right.right)) {
                         zigzig(t);
                         t = t.parent.parent;
                     } else if (t.equals(t.parent.parent.right.left)) {
@@ -198,6 +172,51 @@ public class SplayWithGet<E extends Comparable<? super E>>
                 zag(t.parent);
             else if (t.equals(t.parent.right))
                 zig(t.parent);
+        }
+    }
+
+    /**
+     * Starter method for find.
+     * @param elem Element to search for.
+     * @param t Current entry that's being looked at.
+     * @return Entry if found, else null.
+     */
+    public Entry find(E elem, Entry t) {
+        if (t == null) {
+            return null;
+        } else {
+            int jfr = elem.compareTo(t.element);
+            if (jfr  < 0) {
+                return find(elem, t.left, t);
+            } else if (jfr > 0) {
+                return find(elem, t.right, t);
+            } else {
+                return t;
+            }
+        }
+    }
+
+    /**
+     * Recursive method for finding an element in a tree and splaying the most recent accessed entry.
+     * @param elem Element to search for.
+     * @param t Current entry being looked at.
+     * @param prev Previous entry.
+     * @return Entry if found, else null.
+     */
+    public Entry find(E elem, Entry t, Entry prev) {
+        if (t == null) {
+            sort(prev);
+            return null;
+        } else {
+            int jfr = elem.compareTo(t.element);
+            if (jfr  < 0) {
+                return find(elem, t.left, t);
+            } else if (jfr > 0) {
+                return find(elem, t.right, t);
+            } else {
+                sort(t);
+                return t;
+            }
         }
     }
 }
